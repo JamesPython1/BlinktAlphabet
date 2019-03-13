@@ -10,6 +10,12 @@ class AlphaBlink():
                 blinkt.show()
                 self.b0 = ["a", "b", "c"]
                 self.b1 = ["d", "e", "f"]
+                self.b2 = ["g", "h", "i", "j"]
+                self.b3 = ["k", "l", "m", "n"]
+                self.b4 = ["o", "p", "q"]
+                self.b5 = ["r", "s", "t"]
+                self.b6 = ["u", "v", "w"]
+                self.b7 = ["x", "y", "z"]
         def print_blinkt(self, ltt):
                 letter=ltt.lower()
                 if letter in self.b0:
@@ -22,16 +28,5 @@ class AlphaBlink():
                             blinkt.clear()
                             blinkt.show()
                             time.sleep(0.5)
-                if letter in self.b1:
-                        print("d,e,f")
-                        rn = (self.b1.index(letter) + 1)
-                        for i in range(rn):
-                            blinkt.set_pixel(1,255,0,0)
-                            blinkt.show()
-                            time.sleep(0.5)
-                            blinkt.clear()
-                            blinkt.show()
-                            time.sleep(0.5)
-
-
-
+                         
+               
